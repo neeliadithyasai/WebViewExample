@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     {
         switch sender.tag {
         case 0://Home Button is pressed
-            myWebKitView.reloadFromOrigin()
+             loadLambtonUrl()
         case 1://Prev Button is pressed
             if myWebKitView.canGoBack
             {
@@ -67,6 +67,18 @@ class ViewController: UIViewController {
             print("No Navigation action found...")
         }
     }
+    
+    
+    @IBAction func btnHistoryClick(_ sender: UIBarButtonItem) {
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil);
+          let HistoryTableViewController = storyBoard.instantiateViewController(withIdentifier: "HistoryTableViewController") as! historyViewController;
+          
+          HistoryTableViewController.History = myWebKitView.backForwardList;
+          
+          navigationController?.show(HistoryTableViewController, sender: self);
+    }
+    
     
 }
 

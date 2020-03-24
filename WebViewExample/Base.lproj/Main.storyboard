@@ -58,7 +58,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="w33-U0-OcH">
-                        <barButtonItem key="rightBarButtonItem" title="History" id="Slo-Bg-yjW"/>
+                        <barButtonItem key="rightBarButtonItem" title="History" id="Slo-Bg-yjW">
+                            <connections>
+                                <action selector="btnHistoryClick:" destination="BYZ-38-t0r" id="0N3-99-bSH"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="myWebKitView" destination="KdN-yg-rGs" id="Ttc-dy-auA"/>
@@ -86,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="-57.971014492753625" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--History View Controller-->
         <scene sceneID="mhv-FQ-hnA">
             <objects>
-                <viewController id="vyL-xk-LOX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryTableViewController" id="vyL-xk-LOX" customClass="historyViewController" customModule="WebViewExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dzk-Ii-0pF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,6 +102,20 @@
                                 <rect key="frame" x="0.0" y="94" width="414" height="718"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCell" id="J8P-o7-dnA">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J8P-o7-dnA" id="2sg-eR-Rfp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vyL-xk-LOX" id="YnJ-f0-mle"/>
+                                    <outlet property="delegate" destination="vyL-xk-LOX" id="YyW-L2-HvO"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

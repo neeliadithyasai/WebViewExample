@@ -13,6 +13,7 @@
 		07C5BA25242AB6FB00D8AF31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C5BA23242AB6FB00D8AF31 /* Main.storyboard */; };
 		07C5BA27242AB6FD00D8AF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C5BA26242AB6FD00D8AF31 /* Assets.xcassets */; };
 		07C5BA2A242AB6FD00D8AF31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C5BA28242AB6FD00D8AF31 /* LaunchScreen.storyboard */; };
+		7A24C8BC242ACD90005707E2 /* historyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A24C8BB242ACD90005707E2 /* historyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		07C5BA26242AB6FD00D8AF31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07C5BA29242AB6FD00D8AF31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07C5BA2B242AB6FD00D8AF31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A24C8BB242ACD90005707E2 /* historyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				07C5BA26242AB6FD00D8AF31 /* Assets.xcassets */,
 				07C5BA28242AB6FD00D8AF31 /* LaunchScreen.storyboard */,
 				07C5BA2B242AB6FD00D8AF31 /* Info.plist */,
+				7A24C8BB242ACD90005707E2 /* historyViewController.swift */,
 			);
 			path = WebViewExample;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				07C5BA22242AB6FB00D8AF31 /* ViewController.swift in Sources */,
 				07C5BA1E242AB6FB00D8AF31 /* AppDelegate.swift in Sources */,
 				07C5BA20242AB6FB00D8AF31 /* SceneDelegate.swift in Sources */,
+				7A24C8BC242ACD90005707E2 /* historyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
